@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحدي الطالب</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      text-align: center;
+      direction: rtl;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🔥 تحدي الطالب الذكي</h1>
+
+  <div class="box">
+    <h2>📚 تحدي اليوم</h2>
+    <p id="question">ما إعراب كلمة "العلم" في جملة: العلم نور؟</p>
+    <button onclick="showAnswer()">إظهار الإجابة</button>
+    <p id="answer" style="display:none;">مبتدأ مرفوع ✔️</p>
+  </div>
+
+  <div class="box">
+    <h2>🕌 آية اليوم</h2>
+    <p>وقل رب زدني علما</p>
+  </div>
+
+  <div class="box">
+    <h2>💻 أداة مفيدة</h2>
+    <p>استخدم Notion لتنظيم وقتك</p>
+  </div>
+
+  <script>
+    function showAnswer() {
+      document.getElementById("answer").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
